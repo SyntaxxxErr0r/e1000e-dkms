@@ -28,6 +28,19 @@ sudo dkms install e1000e/3.4.2.3
 
 ------------------
 
+Alternatively; you can download and install with following deb package.
+Alternatif olarak; aşağıdaki deb paketini indirip kurulum yapabilirsiniz.
+
+https://github.com/kelebek333/e1000e-dkms/raw/master/e1000e-dkms_3.4.2.3_amd64.deb
+
+------------------
+
 How to Uninstall? / Nasıl kaldırılır?
 
 sudo dkms remove e1000e/3.4.2.3 --all
+
+apt purge e1000e-dkms
+
+
+
+
