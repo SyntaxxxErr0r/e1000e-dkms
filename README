@@ -1,5 +1,7 @@
 e1000e Linux* Base Driver for Intel(R) Network Connection
 
+Changelog for 3.4.2.4 * Fix build on newer kernels (4.19+) * Backport to upstream: fb052fdd26(e1000e: use new API ethtool_{get|set}_link_ksettings)
+
 Changelog for 3.4.2.3 * Fix build on newer kernels (4.18+) * Backport to upstream: Backport to upstream: 0bcd952fee(ethernet/intel: consolidate NAPI and NAPI exit) * Minor bug fixes
 
 =========================================================
@@ -22,16 +24,16 @@ git clone https://github.com/kelebek333/e1000e-dkms
 
 sudo dkms add ./e1000e-dkms
 
-sudo dkms build e1000e/3.4.2.3
+sudo dkms build e1000e/3.4.2.4
 
-sudo dkms install e1000e/3.4.2.3
+sudo dkms install e1000e/3.4.2.4
 
 ------------------
 
 Alternatively; you can download and install with following deb package.
 Alternatif olarak; aşağıdaki deb paketini indirip kurulum yapabilirsiniz.
 
-https://github.com/kelebek333/e1000e-dkms/raw/master/e1000e-dkms_3.4.2.3_amd64.deb
+https://github.com/kelebek333/e1000e-dkms/raw/master/e1000e-dkms_3.4.2.4_amd64.deb
 
 ------------------
 
@@ -40,7 +42,3 @@ How to Uninstall? / Nasıl kaldırılır?
 sudo dkms remove e1000e/3.4.2.3 --all
 
 apt purge e1000e-dkms
-
-
-
-
