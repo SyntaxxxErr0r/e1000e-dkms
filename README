@@ -39,6 +39,6 @@ https://github.com/kelebek333/e1000e-dkms/raw/master/e1000e-dkms_3.4.2.4_amd64.d
 
 How to Uninstall? / Nasıl kaldırılır?
 
-sudo dkms remove e1000e/3.4.2.3 --all
+sudo dkms remove e1000e/3.4.2.4 --all
 
 apt purge e1000e-dkms
